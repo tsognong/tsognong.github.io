@@ -1,57 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tsognong | Software Engineer & Cyber Security Enthusiast</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fidèle Tsognong | Software Engineer • Cyber Security • Open Source Deployments</title>
+  <meta name="description" content="Software engineer and security enthusiast offering customization & deployments of open-source education and identity platforms: Moodle, Odoo, Keycloak, Wazuh. Freelance and consulting services." />
+  <meta name="author" content="Fidèle Tsognong" />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://tsognong.me/" />
+  <meta property="og:title" content="Fidèle Tsognong | Open Source Deployments & Security" />
+  <meta property="og:description" content="I help institutions deploy, customize, and secure Moodle, Odoo, Keycloak, and Wazuh. Also building at educosmic.tech." />
+  <meta property="og:url" content="https://tsognong.me/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Tsognong" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Open Source Deployments & Security" />
+  <meta name="twitter:description" content="Deploy & customize Moodle, Odoo, Keycloak, Wazuh with a security-first approach." />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet" />
+  <script>
+    // tiny dark mode preference (future enhancement placeholder)
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.classList.add('dark');
+    }
+  </script>
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans">
 
-<header class="bg-gray-900 text-white py-8 text-center">
-  <h1 class="text-4xl font-bold">Fidèle Tsognong</h1>
-  <p class="text-xl mt-2">Software Engineer | Security Enthusiast | SIEM Integrator</p>
+<header class="bg-gray-900 text-white py-10 text-center shadow-lg">
+  <div class="max-w-5xl mx-auto px-4">
+    <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">Fidèle Tsognong</h1>
+    <p class="text-xl md:text-2xl mt-3 font-light">Software Engineer • Security Enthusiast • Open Source Deployments</p>
+    <p class="mt-4 text-gray-300 max-w-2xl mx-auto text-sm md:text-base">I design, deploy, secure and customize scalable platforms for learning, identity, business processes and observability. Also building useful education infrastructure at <a href="https://educosmic.tech" target="_blank" class="text-blue-400 hover:text-blue-300 underline">educosmic.tech</a>.</p>
+  </div>
 </header>
 
-<section class="max-w-4xl mx-auto my-8 p-6 bg-white rounded-lg shadow-md">
-  <h2 class="text-2xl font-semibold text-gray-700 border-b-2 border-gray-200 pb-2 mb-4">About Me</h2>
-  <p class="text-gray-600 leading-relaxed">I am a passionate software engineer with strong experience in backend and frontend development, and a solid understanding of security principles, access control, and SIEM integration.</p>
+<section class="max-w-5xl mx-auto my-10 p-6 md:p-10 bg-white rounded-xl shadow-sm border border-gray-100">
+  <h2 class="text-2xl font-semibold text-gray-800 flex items-center gap-2 mb-4">About Me <span class="text-sm font-normal text-blue-600 bg-blue-50 px-2 py-0.5 rounded">Profile</span></h2>
+  <p class="text-gray-600 leading-relaxed">I am a hands-on software engineer with a strong background in backend (Java, Golang) and frontend (TypeScript frameworks) development. I apply security-first principles and automation to build resilient systems—from access control layers and identity infrastructure to log analysis and observability pipelines. I help institutions and engineering teams adopt, tune, and extend open-source platforms to fit real operational needs.</p>
 </section>
 
-<section class="max-w-4xl mx-auto my-8 p-6 bg-white rounded-lg shadow-md">
-  <h2 class="text-2xl font-semibold text-gray-700 border-b-2 border-gray-200 pb-2 mb-4">Technical Skills</h2>
-  <ul class="space-y-2">
-    <li><span class="font-bold">Languages:</span> Java, Golang, TypeScript</li>
-    <li><span class="font-bold">Frameworks:</span> Spring Boot, ReactJS, Angular</li>
-    <li><span class="font-bold">Security Knowledge:</span> Access Control, SIEM integration, Wazuh SIEM</li>
+<section class="max-w-5xl mx-auto my-10 p-6 md:p-10 bg-white rounded-xl shadow-sm border border-gray-100">
+  <h2 class="text-2xl font-semibold text-gray-800 mb-6">Core Technical Skills</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div>
+      <h3 class="font-semibold text-gray-700 mb-2">Languages & Frameworks</h3>
+      <ul class="space-y-1 text-gray-600 text-sm">
+        <li><span class="font-medium text-gray-700">Languages:</span> Java, Golang, TypeScript</li>
+        <li><span class="font-medium text-gray-700">Frameworks:</span> Spring Boot, React, Angular</li>
+        <li><span class="font-medium text-gray-700">APIs:</span> REST, gRPC, GraphQL (basic)</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-semibold text-gray-700 mb-2">Security & Operations</h3>
+      <ul class="space-y-1 text-gray-600 text-sm">
+        <li>Access Control & Policy (OPA, Keycloak integration patterns)</li>
+        <li>Log Enrichment & SIEM (Wazuh decoders & rules)</li>
+        <li>Secure Deployment Automation & Hardening</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="max-w-5xl mx-auto my-10 p-6 md:p-10 bg-white rounded-xl shadow-sm border border-gray-100">
+  <h2 class="text-2xl font-semibold text-gray-800 mb-6">Open Source Platform Services</h2>
+  <div class="grid md:grid-cols-2 gap-6">
+    <div class="p-5 border rounded-lg hover:shadow transition bg-gray-50">
+      <h3 class="font-semibold text-gray-800 mb-2">Moodle</h3>
+      <p class="text-sm text-gray-600">End-to-end deployments, theme customization, plugin evaluation, performance tuning for institutional e-learning.</p>
+    </div>
+    <div class="p-5 border rounded-lg hover:shadow transition bg-gray-50">
+      <h3 class="font-semibold text-gray-800 mb-2">Odoo</h3>
+      <p class="text-sm text-gray-600">Module selection & configuration, workflow customization, secure hosting setup, integration patterns.</p>
+    </div>
+    <div class="p-5 border rounded-lg hover:shadow transition bg-gray-50">
+      <h3 class="font-semibold text-gray-800 mb-2">Keycloak</h3>
+      <p class="text-sm text-gray-600">Realm design, SSO federation, identity brokering, fine-grained access policies, audit integration.</p>
+    </div>
+    <div class="p-5 border rounded-lg hover:shadow transition bg-gray-50">
+      <h3 class="font-semibold text-gray-800 mb-2">Wazuh (SIEM)</h3>
+      <p class="text-sm text-gray-600">Custom decoders, rule authoring, alert noise reduction, identity system log mapping, dashboard curation.</p>
+    </div>
+  </div>
+  <div class="mt-6 p-4 bg-blue-50 border border-blue-100 rounded-lg text-sm text-blue-800">
+    I provide tailored customization & secure deployments for education technology and identity/security stacks. Need something unique? <a href="#contact" class="underline font-medium">Reach out below.</a>
+  </div>
+</section>
+
+<section class="max-w-5xl mx-auto my-10 p-6 md:p-10 bg-white rounded-xl shadow-sm border border-gray-100">
+  <h2 class="text-2xl font-semibold text-gray-800 mb-6">Selected Engineering & Security Projects</h2>
+  <ul class="space-y-3 text-gray-600 text-sm">
+    <li><span class="font-medium text-gray-700">Identity & SIEM:</span> Custom Wazuh rules & decoders for Keycloak + Shibboleth IdP to enrich auth event visibility.</li>
+    <li><span class="font-medium text-gray-700">Microservices Platform:</span> Student management system (Spring Boot services + Angular frontend) with centralized auth.</li>
+    <li><span class="font-medium text-gray-700">Policy Enforcement:</span> Real-time access control PoC using Open Policy Agent (OPA) embedded in services.</li>
+    <li><span class="font-medium text-gray-700">Data Safety:</span> Automated backup & restoration orchestration CLI in Golang with integrity verification.</li>
   </ul>
 </section>
 
-<section class="max-w-4xl mx-auto my-8 p-6 bg-white rounded-lg shadow-md">
-  <h2 class="text-2xl font-semibold text-gray-700 border-b-2 border-gray-200 pb-2 mb-4">Projects</h2>
-  <ul class="space-y-2">
-    <li>Custom Wazuh Decoders & Rules for Keycloak, Shibboleth IdP</li>
-    <li>Microservices-based Student Management System (Java Spring Boot + Angular)</li>
-    <li>Real-time Access Control PoC using Open Policy Agent (OPA)</li>
-    <li>Database backup/restoration management using Golang</li>
-  </ul>
+<section id="contact" class="max-w-5xl mx-auto my-10 p-6 md:p-10 bg-white rounded-xl shadow-sm border border-gray-100">
+  <h2 class="text-2xl font-semibold text-gray-800 mb-6">Contact & Availability</h2>
+  <div class="grid md:grid-cols-2 gap-6 text-sm">
+    <div>
+      <ul class="space-y-2 text-gray-600">
+        <li><span class="font-medium text-gray-700">Email:</span> tsognong.fidele@example.com</li>
+        <li><span class="font-medium text-gray-700">GitHub:</span> <a href="https://github.com/tsognong" target="_blank" class="text-blue-600 hover:text-blue-700 underline">github.com/tsognong</a></li>
+        <li><span class="font-medium text-gray-700">LinkedIn:</span> <a href="https://linkedin.com/in/tsognong-fidele" target="_blank" class="text-blue-600 hover:text-blue-700 underline">linkedin.com/in/tsognong-fidele</a></li>
+      </ul>
+    </div>
+    <div class="space-y-3">
+      <p class="text-gray-600">Looking for help deploying or customizing Moodle, Odoo, Keycloak, or Wazuh? I offer consulting for architecture reviews, secure deployments, performance tuning, and feature extensions.</p>
+      <p class="text-gray-600">I also collaborate on education infrastructure initiatives via <a href="https://educosmic.tech" target="_blank" class="text-blue-600 hover:text-blue-700 underline">educosmic.tech</a>.</p>
+    </div>
+  </div>
 </section>
 
-<section class="max-w-4xl mx-auto my-8 p-6 bg-white rounded-lg shadow-md">
-  <h2 class="text-2xl font-semibold text-gray-700 border-b-2 border-gray-200 pb-2 mb-4">Contact</h2>
-  <ul class="space-y-2">
-    <li>Email: tsognong.fidele@example.com</li>
-    <li>GitHub: <a href="https://github.com/tsognong" target="_blank" class="text-blue-600 hover:text-blue-800 underline">github.com/tsognong</a></li>
-    <li>LinkedIn: <a href="https://linkedin.com/in/tsognong-fidele" target="_blank" class="text-blue-600 hover:text-blue-800 underline">linkedin.com/in/tsognong-fidele</a></li>
-  </ul>
-</section>
-
-<footer class="text-center py-4 mt-8 bg-gray-900 text-gray-400">
-  &copy; 2025 Tsognong. All rights reserved.
-</footer>
-
-<footer class="text-center py-6 mt-10 bg-gray-900 text-gray-300">
-  &copy; 2025 Tsognong. All rights reserved. | Powered by <a href="https://educosmic.tech" class="text-blue-400 underline" target="_blank">educosmic.tech</a>
+<footer class="text-center py-8 mt-12 bg-gray-900 text-gray-400 text-sm">
+  <div class="max-w-5xl mx-auto px-4 space-y-2">
+    <div>&copy; 2025 Tsognong. All rights reserved.</div>
+    <div class="text-gray-500">Open-source platform services • Security-aware engineering • Education infrastructure</div>
+    <div>Built with <span class="text-red-400">&#9829;</span> • <a href="https://educosmic.tech" target="_blank" class="text-blue-400 hover:text-blue-300 underline">educosmic.tech</a></div>
+  </div>
 </footer>
 </body>
 </html>
