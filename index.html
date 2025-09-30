@@ -59,22 +59,59 @@
 </section>
 
 <section class="max-w-5xl mx-auto my-10 p-6 md:p-10 bg-white rounded-xl shadow-sm border border-gray-100">
+  <h2 class="text-2xl font-semibold text-gray-800 mb-6">Peer-Reviewed Research</h2>
+  <ul class="space-y-4 text-sm text-gray-700 leading-relaxed">
+    <li>
+      <p class="font-medium text-gray-800">Organization-based Access Control Optimization Based on Suspicious Behavior Detection Using Information Theory</p>
+      <p class="text-gray-600">Focus: Adaptive access control optimization leveraging entropy / information theory to detect anomalous request patterns.</p>
+      <a href="https://doi.org/10.1007/s42979-021-00515-w" target="_blank" class="text-blue-600 hover:underline text-xs">DOI: 10.1007/s42979-021-00515-w</a>
+    </li>
+    <li>
+      <p class="font-medium text-gray-800">A Correct-by-Construction Model for Request-Based Access Control</p>
+      <p class="text-gray-600">Focus: Formal modeling ensuring policy correctness during design—reducing logic flaws in authorization flows.</p>
+      <a href="https://doi.org/10.1007/978-3-031-88039-1_4" target="_blank" class="text-blue-600 hover:underline text-xs">DOI: 10.1007/978-3-031-88039-1_4</a>
+    </li>
+    <li>
+      <p class="font-medium text-gray-800">Big Data Access Control for Cloud-Native Hadoop Environments</p>
+      <p class="text-gray-600">Focus: Securing distributed data processing pipelines with scalable policy enforcement across Hadoop components.</p>
+      <a href="https://doi.org/10.24138/jcomss-2025-0023" target="_blank" class="text-blue-600 hover:underline text-xs">DOI: 10.24138/jcomss-2025-0023</a>
+    </li>
+    <li>
+      <p class="font-medium text-gray-800">Continuous Single-Sign-On (CSSO) Method for Authentication & Authorization in Microservices</p>
+      <p class="text-gray-600">Focus: Extending traditional SSO with continuous, context-aware validation to reduce session misuse in distributed systems.</p>
+      <a href="https://doi.org/10.21203/rs.3.rs-1579462/v1" target="_blank" class="text-blue-600 hover:underline text-xs">Preprint DOI</a>
+    </li>
+  </ul>
+</section>
+
+<section class="max-w-5xl mx-auto my-10 p-6 md:p-10 bg-white rounded-xl shadow-sm border border-gray-100">
   <h2 class="text-2xl font-semibold text-gray-800 mb-6">Core Technical Skills</h2>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
     <div>
-      <h3 class="font-semibold text-gray-700 mb-2">Languages & Frameworks</h3>
+      <h3 class="font-semibold text-gray-700 mb-2">Engineering Stack</h3>
       <ul class="space-y-1 text-gray-600 text-sm">
         <li><span class="font-medium text-gray-700">Languages:</span> Java, Golang, TypeScript</li>
         <li><span class="font-medium text-gray-700">Frameworks:</span> Spring Boot, React, Angular</li>
-        <li><span class="font-medium text-gray-700">APIs:</span> REST, gRPC, GraphQL (basic)</li>
+        <li><span class="font-medium text-gray-700">API Styles:</span> REST, basic GraphQL consumption</li>
+        <li>Eventing & messaging integration patterns</li>
       </ul>
     </div>
     <div>
-      <h3 class="font-semibold text-gray-700 mb-2">Security & Operations</h3>
+      <h3 class="font-semibold text-gray-700 mb-2">Security & Identity</h3>
       <ul class="space-y-1 text-gray-600 text-sm">
-        <li>Access Control & Policy (OPA, Keycloak integration patterns)</li>
-        <li>Log Enrichment & SIEM (Wazuh decoders & rules)</li>
-        <li>Secure Deployment Automation & Hardening</li>
+        <li>Access Control & Policy (OPA, attribute & risk-based models)</li>
+        <li>Keycloak realm design & federation</li>
+        <li>Session & continuous assurance concepts (CSSO)</li>
+        <li>WAF deployment & tuning (OWASP rulesets)</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-semibold text-gray-700 mb-2">Observability & Data Pipelines</h3>
+      <ul class="space-y-1 text-gray-600 text-sm">
+        <li>ELK Stack (Elasticsearch, Logstash, Kibana)</li>
+        <li>Beats: Filebeat, Auditbeat, Metricbeat, auditd pipelines</li>
+        <li>SIEM Enrichment (Wazuh custom decoders/rules)</li>
+        <li>Backup integrity & lifecycle automation</li>
       </ul>
     </div>
   </div>
@@ -107,12 +144,24 @@
 
 <section class="max-w-5xl mx-auto my-10 p-6 md:p-10 bg-white rounded-xl shadow-sm border border-gray-100">
   <h2 class="text-2xl font-semibold text-gray-800 mb-6">Selected Engineering & Security Projects</h2>
-  <ul class="space-y-3 text-gray-600 text-sm">
-    <li><span class="font-medium text-gray-700">Identity & SIEM:</span> Custom Wazuh rules & decoders for Keycloak + Shibboleth IdP to enrich auth event visibility.</li>
-    <li><span class="font-medium text-gray-700">Microservices Platform:</span> Student management system (Spring Boot services + Angular frontend) with centralized auth.</li>
-    <li><span class="font-medium text-gray-700">Policy Enforcement:</span> Real-time access control PoC using Open Policy Agent (OPA) embedded in services.</li>
-    <li><span class="font-medium text-gray-700">Data Safety:</span> Automated backup & restoration orchestration CLI in Golang with integrity verification.</li>
-  </ul>
+  <div class="space-y-6">
+    <div class="p-4 border rounded-lg bg-gray-50">
+      <h3 class="font-semibold text-gray-800">CSSO IAM Platform (Continuous Single Sign-On)</h3>
+      <p class="text-sm text-gray-600 mt-1">An identity & access management platform that augments traditional SSO with continuous, risk-aware session assurance. Incorporates device / browser / server fingerprint signals, rate limiting, contextual anomaly detection, adaptive & risk-based authentication challenges, full user & role management, OAuth 2.0 authorization flows, and compliance-grade audit trails. Demo: <a href="https://demo.csso-iam.com" target="_blank" class="text-blue-600 underline">demo.csso-iam.com</a></p>
+    </div>
+    <div class="p-4 border rounded-lg bg-gray-50">
+      <h3 class="font-semibold text-gray-800">AcroForm Validator (React + Golang)</h3>
+      <p class="text-sm text-gray-600 mt-1">Tooling to audit and validate PDF AcroForm field naming conventions, completeness, structural consistency, and enumerated field catalogs—supports automated QA workflows and integration into document ingestion pipelines.</p>
+    </div>
+    <div class="p-4 border rounded-lg bg-gray-50">
+      <h3 class="font-semibold text-gray-800">Cloud-Aware Backup & Integrity Platform</h3>
+      <p class="text-sm text-gray-600 mt-1">Modern web-based backup monitoring & orchestration (Golang + React). Supports multi-target storage (local, Google Drive, OneDrive, etc.), pluggable integrity checks, retention policies, and proactive anomaly surfacing.</p>
+    </div>
+    <div class="p-4 border rounded-lg bg-gray-50">
+      <h3 class="font-semibold text-gray-800">Identity Log Observability Enhancements</h3>
+      <p class="text-sm text-gray-600 mt-1">Custom Wazuh decoders & enrichment rules for Keycloak + Shibboleth to correlate authentication flows with authorization policy outcomes—improving triage speed and reducing false positives.</p>
+    </div>
+  </div>
 </section>
 
 <section id="contact" class="max-w-5xl mx-auto my-10 p-6 md:p-10 bg-white rounded-xl shadow-sm border border-gray-100">
@@ -129,6 +178,22 @@
       <p class="text-gray-600">Looking for help deploying or customizing Moodle, Odoo, Keycloak, or Wazuh? I offer consulting for architecture reviews, secure deployments, performance tuning, and feature extensions.</p>
       <p class="text-gray-600">I also collaborate on education infrastructure initiatives via <a href="https://educosmic.tech" target="_blank" class="text-blue-600 hover:text-blue-700 underline">educosmic.tech</a>.</p>
     </div>
+  </div>
+</section>
+
+<section class="max-w-5xl mx-auto my-10 p-6 md:p-10 bg-white rounded-xl shadow-sm border border-gray-100">
+  <h2 class="text-2xl font-semibold text-gray-800 mb-6">Collaboration & Open Education Ecosystem</h2>
+  <p class="text-gray-600 text-sm leading-relaxed">I am actively building a connected ecosystem that helps institutions of different sizes modernize their digital learning, identity, and security posture using primarily open-source and cost-effective technologies. The focus spans from public-facing academic presence to internal secure campus workspaces and observability layers.</p>
+  <ul class="mt-5 space-y-2 text-sm text-gray-700 list-disc list-inside">
+    <li>Education delivery & learning platforms (custom Moodle deployments, scalable content delivery)</li>
+    <li>Identity & access lifecycle (federation, adaptive / continuous assurance via CSSO IAM)</li>
+    <li>Operational visibility (ELK + Wazuh + Beats for telemetry & risk signals)</li>
+    <li>Secure perimeter & application protection (WAF integrations, hardened hosting)</li>
+    <li>Data resilience (policy-driven backups, integrity verification, retention governance)</li>
+  </ul>
+  <div class="mt-6 p-4 bg-indigo-50 border border-indigo-100 rounded-lg text-indigo-800 text-sm">
+    Open to strategic collaboration, research partnerships, and pilot integrations. Platforms & initiatives: 
+    <a href="https://www.csso-iam.com" target="_blank" class="text-indigo-600 underline hover:text-indigo-500">csso-iam.com</a> & <a href="https://educosmic.tech" target="_blank" class="text-indigo-600 underline hover:text-indigo-500">educosmic.tech</a>. Reach out if you're interested in co-building sustainable education infrastructure.
   </div>
 </section>
 
