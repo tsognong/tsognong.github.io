@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tsognong.me/sitemap.xml
+
+# Accelerated Mobile Pages
+User-agent: *
+Allow: /*.html$
+
+# Google Search Console verification
+# Add your verification file here when ready
